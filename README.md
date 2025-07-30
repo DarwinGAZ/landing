@@ -37,40 +37,9 @@ Este projeto é uma landing page simples com frontend estático servido pelo bac
    npm install
    ```
 
-3. Inicie o servidor:  
-   ```bash
-   npm start
-   ```  
-   O servidor rodará na porta 4040 por padrão.
-
-4. Acesse a aplicação no navegador:  
-   ```
-   http://localhost:4040
-   ```
-
----
-
 ## ⚙️ Como funciona
 
 - 📁 O frontend está em `public/` e é servido diretamente pelo Express via `express.static`.
 - 📤 O formulário envia os dados para o backend na rota `POST /subscribe`.
 - 📨 O backend processa os dados recebidos e pode salvar, enviar e-mail, etc. (atualmente apenas responde com uma mensagem de sucesso).
 
----
-
-## 🚀 Deploy
-
-Para colocar a aplicação no ar, você pode usar serviços como Heroku, Railway, Render, etc.  
-Lembre-se de configurar o backend para usar a porta da variável de ambiente `process.env.PORT`.
-
----
-
-## ✉️ Contato
-
-Qualquer dúvida ou sugestão, abra uma issue ou envie uma mensagem!
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT.
