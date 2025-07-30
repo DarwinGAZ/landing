@@ -59,7 +59,6 @@ export const automaticEmail = async (name: string, email: string) => {
   <head><meta charset="utf-8"></head>
   <body>
     <p>Olá, ${name.split(" ")[0]}! Seja bem-vindo às notícias da semana.</p>
-    <p><img src="https://cldup.com/P0b1bUmEet.png" width="16" height="16" alt="Ícone"/></p>
     <p><img src="https://cldup.com/D72zpdwI-i.gif" width="500" height="350" alt="GIF"/></p>
   </body>
 </html>`,

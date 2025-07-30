@@ -5,7 +5,7 @@
 
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: #f5f7fa;
+    background: #222831;
     margin: 0;
     padding: 0;
     display: flex;
@@ -15,18 +15,18 @@ body {
 }
 
 .container {
-    background: white;
-    padding: 2rem 3rem;
+    background: #31363f;
+    padding: 2rem 5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     text-align: center;
 }
 
 h1 {
     margin-bottom: 1rem;
-    color: #333;
+    color: #eeeeee;
 }
 
 form {

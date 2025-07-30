@@ -9,7 +9,7 @@ const server = express();
 server.use(express.json());
 server.use(cors());
 
-server.use(express.static(path.join(__dirname, "..", "public")));
+server.use("/subscribe", express.static(path.join(__dirname, "..", "public")));
 
 server.use(routes);
 
@@ -17,6 +17,6 @@ server.use((req, res) => {
     res.status(404).json({ error: "Página não encontrada" });
 });
 
-server.listen(4040, () => {
-    console.log("Servidor rodando em http://localhost:4040");
+server.listen(process.env.PORT, () => {
+    console.log("Servidor rodando em http://localhost:" + process.env.PORT);
 });
