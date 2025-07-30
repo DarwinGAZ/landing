@@ -1,5 +1,4 @@
 import express from "express";
-import cors from "cors";
 import routes from "./routes/main";
 import path from "path";
 
@@ -7,7 +6,6 @@ const server = express();
 
 // Middlewares
 server.use(express.json());
-server.use(cors());
 
 server.use("/subscribe", express.static(path.join(__dirname, "..", "public")));
 

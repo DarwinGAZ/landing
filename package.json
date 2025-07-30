@@ -3,7 +3,9 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "dev": "tsx watch backend/src/server.ts"
+        "dev": "tsx watch backend/src/server.ts",
+        "build": "tsc",
+        "start": "node dist/server.js"
     },
     "author": "",
     "license": "ISC",
@@ -20,7 +22,8 @@
     },
     "devDependencies": {
         "@types/express": "^5.0.3",
-        "@types/nodemailer": "^6.4.17"
+        "@types/nodemailer": "^6.4.17",
+        "typescript": "^5.8.3"
     },
     "prisma": {
         "schema": "backend/src/prisma/schema.prisma"
